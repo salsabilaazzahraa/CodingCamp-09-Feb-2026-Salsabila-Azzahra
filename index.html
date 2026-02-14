@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salsabila Portfolio | My Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container">
@@ -37,7 +40,8 @@
                     </button>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1366&h=578&fit=crop" alt="Banner">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1366&h=578&fit=crop"
+                        alt="Banner">
                 </div>
             </div>
         </div>
@@ -77,20 +81,20 @@
                             <i class="far fa-clock"></i>
                             <span id="currentTime">Loading time...</span>
                         </div>
-                        
+
                         <form id="messageForm" onsubmit="handleSubmit(event)">
                             <div class="form-group">
                                 <label for="name"><i class="fas fa-user"></i> Nama :</label>
                                 <input type="text" id="name" name="name" placeholder="Nama" required>
                                 <span class="error-message" id="nameError"></span>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="birthdate"><i class="fas fa-calendar-alt"></i> Tanggal Lahir :</label>
                                 <input type="date" id="birthdate" name="birthdate" required>
                                 <span class="error-message" id="birthdateError"></span>
                             </div>
-                            
+
                             <div class="form-group gender-group">
                                 <label><i class="fas fa-venus-mars"></i> Jenis Kelamin :</label>
                                 <div class="radio-group">
@@ -107,23 +111,23 @@
                                 </div>
                                 <span class="error-message" id="genderError"></span>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="pesan"><i class="fas fa-comment"></i> Pesan :</label>
                                 <textarea id="pesan" name="pesan" rows="4" placeholder="Pesan" required></textarea>
                                 <span class="error-message" id="pesanError"></span>
                             </div>
-                            
+
                             <button type="submit" class="submit-btn">
                                 <i class="fas fa-paper-plane"></i> Submit
                             </button>
                         </form>
                     </div>
-                    
+
                     <div class="result-section">
                         <h3>Form Belajar</h3>
                         <p>Ini adalah website latihan pertama</p>
-                        
+
                         <div class="result-display" id="resultDisplay" style="display: none;">
                             <div class="result-item">
                                 <p><strong>Nama :</strong> <span id="resultName"></span></p>
@@ -132,7 +136,7 @@
                                 <p><strong>Pesan :</strong> <span id="resultPesan"></span></p>
                             </div>
                         </div>
-                        
+
                         <div class="data-table">
                             <table>
                                 <thead>
@@ -151,7 +155,9 @@
                                         <td>December 10, 1815</td>
                                         <td>Perempuan</td>
                                         <td>Belajar Buat Website</td>
-                                        <td><button class="btn-profile" onclick="showProfile('Ada Lovelace', 'December 10, 1815', 'Perempuan', 'Belajar Buat Website')">Klik Disini</button></td>
+                                        <td><button class="btn-profile"
+                                                onclick="showProfile('Ada Lovelace', 'December 10, 1815', 'Perempuan', 'Belajar Buat Website')">Klik
+                                                Disini</button></td>
                                         <td><button class="btn-delete" onclick="deleteRow(this)">×</button></td>
                                     </tr>
                                     <tr>
@@ -159,7 +165,9 @@
                                         <td>December 9, 1906</td>
                                         <td>Perempuan</td>
                                         <td>Hello World</td>
-                                        <td><button class="btn-profile" onclick="showProfile('Grace Hopper', 'December 9, 1906', 'Perempuan', 'Hello World')">Klik Disini</button></td>
+                                        <td><button class="btn-profile"
+                                                onclick="showProfile('Grace Hopper', 'December 9, 1906', 'Perempuan', 'Hello World')">Klik
+                                                Disini</button></td>
                                         <td><button class="btn-delete" onclick="deleteRow(this)">×</button></td>
                                     </tr>
                                     <tr>
@@ -167,7 +175,9 @@
                                         <td>August 17, 1936</td>
                                         <td>Perempuan</td>
                                         <td>Test Dulu</td>
-                                        <td><button class="btn-profile" onclick="showProfile('Margaret Hamilton', 'August 17, 1936', 'Perempuan', 'Test Dulu')">Klik Disini</button></td>
+                                        <td><button class="btn-profile"
+                                                onclick="showProfile('Margaret Hamilton', 'August 17, 1936', 'Perempuan', 'Test Dulu')">Klik
+                                                Disini</button></td>
                                         <td><button class="btn-delete" onclick="deleteRow(this)">×</button></td>
                                     </tr>
                                     <tr>
@@ -175,7 +185,9 @@
                                         <td>June 24, 1917</td>
                                         <td>Laki-Laki</td>
                                         <td>Selalu Semangat</td>
-                                        <td><button class="btn-profile" onclick="showProfile('Joan Clarke', 'June 24, 1917', 'Laki-Laki', 'Selalu Semangat')">Klik Disini</button></td>
+                                        <td><button class="btn-profile"
+                                                onclick="showProfile('Joan Clarke', 'June 24, 1917', 'Laki-Laki', 'Selalu Semangat')">Klik
+                                                Disini</button></td>
                                         <td><button class="btn-delete" onclick="deleteRow(this)">×</button></td>
                                     </tr>
                                 </tbody>
@@ -193,14 +205,20 @@
             <div class="profile-content">
                 <div class="profile-image">
                     <div class="profile-animation">
-                        <img src="salsa.jpg" alt="Salsabila Azzahra" id="profileImage">
+                        <img src="salsa.JPG" alt="Salsabila Azzahra" id="profileImage">
                     </div>
                 </div>
                 <div class="profile-text">
                     <h3>About Me - Salsabila Azzahra</h3>
-                    <p>Welcome to my portfolio! I'm Salsabila Azzahra, a passionate Software Engineering student currently participating in the Coding Camp program at RevoU. I'm dedicated to learning and mastering web development technologies including HTML, CSS, JavaScript, and more.</p>
-                    <p>My journey in technology started with a curiosity about how websites work, and now I'm building my skills through hands-on projects and continuous learning. I believe that coding is not just about writing programs, but about solving real-world problems and creating meaningful experiences.</p>
-                    <p>I'm excited to collaborate with like-minded individuals and contribute to innovative projects that make a difference.</p>
+                    <p>Welcome to my portfolio! I'm Salsabila Azzahra, a passionate Software Engineering student
+                        currently participating in the Coding Camp program at RevoU. I'm dedicated to learning and
+                        mastering web development technologies including HTML, CSS, JavaScript, and more.</p>
+                    <p>My journey in technology started with a curiosity about how websites work, and now I'm building
+                        my skills through hands-on projects and continuous learning. I believe that coding is not just
+                        about writing programs, but about solving real-world problems and creating meaningful
+                        experiences.</p>
+                    <p>I'm excited to collaborate with like-minded individuals and contribute to innovative projects
+                        that make a difference.</p>
                 </div>
             </div>
 
@@ -210,7 +228,8 @@
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>My Vision</h3>
-                    <p>To become a skilled software engineer who creates impactful digital solutions that improve people's lives and contribute to technological advancement in Indonesia.</p>
+                    <p>To become a skilled software engineer who creates impactful digital solutions that improve
+                        people's lives and contribute to technological advancement in Indonesia.</p>
                 </div>
                 <div class="mission">
                     <div class="mission-icon">
@@ -264,7 +283,7 @@
                     <button class="sub-tab-btn" onclick="showSubTab('projects', this)">Projects</button>
                     <button class="sub-tab-btn" onclick="showSubTab('certifications', this)">Certifications</button>
                 </div>
-                
+
                 <div id="education" class="sub-tab-content active">
                     <div class="timeline">
                         <div class="timeline-item">
@@ -274,7 +293,9 @@
                             <div class="timeline-content">
                                 <h4>RevoU - Coding Camp</h4>
                                 <p class="timeline-date">2026 - Present</p>
-                                <p class="timeline-desc">Software Engineering Program - Intensive coding bootcamp focusing on full-stack web development, problem-solving, and real-world projects.</p>
+                                <p class="timeline-desc">Software Engineering Program - Intensive coding bootcamp
+                                    focusing on full-stack web development, problem-solving, and real-world projects.
+                                </p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -284,7 +305,8 @@
                             <div class="timeline-content">
                                 <h4>Politeknik Negeri Malang</h4>
                                 <p class="timeline-date">2025 - Present</p>
-                                <p class="timeline-desc">Bachelor's Degree in Computer Science - Focusing on software engineering, algorithms, and database systems.</p>
+                                <p class="timeline-desc">Bachelor's Degree in Computer Science - Focusing on software
+                                    engineering, algorithms, and database systems.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -294,12 +316,13 @@
                             <div class="timeline-content">
                                 <h4>SMKN 1 Gunung Putri</h4>
                                 <p class="timeline-date">2020 - 2023</p>
-                                <p class="timeline-desc">Software Engineering - Specialized in programming, web development, and software design principles.</p>
+                                <p class="timeline-desc">Software Engineering - Specialized in programming, web
+                                    development, and software design principles.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="experience" class="sub-tab-content">
                     <div class="timeline">
                         <div class="timeline-item">
@@ -309,7 +332,9 @@
                             <div class="timeline-content">
                                 <h4>Coding Camp Participant - RevoU</h4>
                                 <p class="timeline-date">Feb 2026 - Present</p>
-                                <p class="timeline-desc">Active participant in intensive software engineering bootcamp. Working on real-world projects, learning modern web technologies, and developing problem-solving skills.</p>
+                                <p class="timeline-desc">Active participant in intensive software engineering bootcamp.
+                                    Working on real-world projects, learning modern web technologies, and developing
+                                    problem-solving skills.</p>
                                 <div class="skills-tags">
                                     <span>HTML5</span>
                                     <span>CSS3</span>
@@ -326,7 +351,8 @@
                             <div class="timeline-content">
                                 <h4>Student Developer</h4>
                                 <p class="timeline-date">2023 - Present</p>
-                                <p class="timeline-desc">Developing personal projects and contributing to open-source initiatives. Building portfolio with various web applications and mobile apps.</p>
+                                <p class="timeline-desc">Developing personal projects and contributing to open-source
+                                    initiatives. Building portfolio with various web applications and mobile apps.</p>
                                 <div class="skills-tags">
                                     <span>Flutter</span>
                                     <span>Python</span>
@@ -337,14 +363,16 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="projects" class="sub-tab-content">
                     <div class="portfolio-grid">
                         <div class="portfolio-item">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" alt="Company Profile Website">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop"
+                                alt="Company Profile Website">
                             <div class="portfolio-overlay">
                                 <h4>Company Profile Website</h4>
-                                <p>Full-stack website with form validation, responsive design, and interactive features built during Coding Camp.</p>
+                                <p>Full-stack website with form validation, responsive design, and interactive features
+                                    built during Coding Camp.</p>
                                 <div class="project-tech">
                                     <span>HTML5</span>
                                     <span>CSS3</span>
@@ -354,10 +382,12 @@
                             </div>
                         </div>
                         <div class="portfolio-item">
-                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop" alt="E-commerce Platform">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop"
+                                alt="E-commerce Platform">
                             <div class="portfolio-overlay">
                                 <h4>E-commerce Platform</h4>
-                                <p>Online shopping platform with product catalog, shopping cart, and user authentication features.</p>
+                                <p>Online shopping platform with product catalog, shopping cart, and user authentication
+                                    features.</p>
                                 <div class="project-tech">
                                     <span>Flutter</span>
                                     <span>Firebase</span>
@@ -368,7 +398,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="certifications" class="sub-tab-content">
                     <div class="certifications-grid">
                         <div class="certification-card">
@@ -378,7 +408,8 @@
                             <h4>Coding Camp - Software Engineering</h4>
                             <p class="cert-issuer">RevoU</p>
                             <p class="cert-date">Expected 2026</p>
-                            <p class="cert-desc">Comprehensive software engineering program covering full-stack development, algorithms, and real-world projects.</p>
+                            <p class="cert-desc">Comprehensive software engineering program covering full-stack
+                                development, algorithms, and real-world projects.</p>
                         </div>
                         <div class="certification-card">
                             <div class="cert-icon">
@@ -387,7 +418,8 @@
                             <h4>Web Development Fundamentals</h4>
                             <p class="cert-issuer">Self-paced Learning</p>
                             <p class="cert-date">2023</p>
-                            <p class="cert-desc">Mastered HTML5, CSS3, and JavaScript fundamentals with hands-on projects.</p>
+                            <p class="cert-desc">Mastered HTML5, CSS3, and JavaScript fundamentals with hands-on
+                                projects.</p>
                         </div>
                         <div class="certification-card">
                             <div class="cert-icon">
@@ -405,7 +437,8 @@
                             <h4>Python Programming</h4>
                             <p class="cert-issuer">Academic Course</p>
                             <p class="cert-date">2025</p>
-                            <p class="cert-desc">Fundamentals of Python programming, data structures, and algorithms.</p>
+                            <p class="cert-desc">Fundamentals of Python programming, data structures, and algorithms.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -421,7 +454,7 @@
                 <button class="sub-tab-btn" onclick="showSubTab('travel-contact', this)">Contact</button>
                 <button class="sub-tab-btn" onclick="showSubTab('travel-gallery', this)">Gallery</button>
             </div>
-            
+
             <div class="travel-content">
                 <div id="travel-info" class="sub-tab-content active">
                     <div class="info-grid">
@@ -430,29 +463,33 @@
                                 <i class="fas fa-plane"></i>
                             </div>
                             <h3>International Tours</h3>
-                            <p>Explore the world with our carefully curated international tour packages. From Europe to Asia, we've got you covered with the best travel experiences.</p>
+                            <p>Explore the world with our carefully curated international tour packages. From Europe to
+                                Asia, we've got you covered with the best travel experiences.</p>
                         </div>
                         <div class="info-card">
                             <div class="card-icon">
                                 <i class="fas fa-hotel"></i>
                             </div>
                             <h3>Luxury Accommodation</h3>
-                            <p>Stay in the finest hotels and resorts worldwide. We partner with top-rated accommodations to ensure your comfort and satisfaction throughout your journey.</p>
+                            <p>Stay in the finest hotels and resorts worldwide. We partner with top-rated accommodations
+                                to ensure your comfort and satisfaction throughout your journey.</p>
                         </div>
                         <div class="info-card">
                             <div class="card-icon">
                                 <i class="fas fa-utensils"></i>
                             </div>
                             <h3>Gourmet Dining</h3>
-                            <p>Experience local cuisines and international delicacies. Our tours include the best dining experiences with authentic flavors from around the world.</p>
+                            <p>Experience local cuisines and international delicacies. Our tours include the best dining
+                                experiences with authentic flavors from around the world.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="travel-contact" class="sub-tab-content">
                     <div class="contact-form-wrapper">
                         <div class="contact-image">
-                            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=500&fit=crop" alt="Travel Agent">
+                            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=500&fit=crop"
+                                alt="Travel Agent">
                             <div class="agent-info">
                                 <h4>Florence Hughes</h4>
                                 <p>Travel Consultant</p>
@@ -462,7 +499,7 @@
                         <div class="contact-form">
                             <h3>Contact Our Travel Agent</h3>
                             <p class="contact-desc">Sales akan menghubungi anda 1x24jam setelah data kami terima</p>
-                            
+
                             <form id="travelForm" onsubmit="handleTravelSubmit(event)">
                                 <div class="form-group">
                                     <label for="tourName"><i class="fas fa-user"></i> Tour Name :</label>
@@ -473,10 +510,12 @@
                                     <input type="email" id="emailAddress" placeholder="example@email.com" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="interest"><i class="fas fa-heart"></i> What are you interested in?</label>
+                                    <label for="interest"><i class="fas fa-heart"></i> What are you interested
+                                        in?</label>
                                     <select id="interest" required>
                                         <option value="">Select option</option>
-                                        <option value="liburan">Liburan jadi menyenangkan bersama Travel Agentku</option>
+                                        <option value="liburan">Liburan jadi menyenangkan bersama Travel Agentku
+                                        </option>
                                         <option value="adventure">Adventure Tour</option>
                                         <option value="business">Business Trip</option>
                                     </select>
@@ -488,46 +527,52 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="travel-gallery" class="sub-tab-content">
                     <div class="gallery-grid">
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=400&h=300&fit=crop" alt="Paris">
+                            <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=400&h=300&fit=crop"
+                                alt="Paris">
                             <div class="gallery-overlay">
                                 <h4>Paris, France</h4>
                                 <p>Eiffel Tower & Louvre Museum</p>
                             </div>
                         </div>
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&h=300&fit=crop" alt="Bali">
+                            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=400&h=300&fit=crop"
+                                alt="Bali">
                             <div class="gallery-overlay">
                                 <h4>Bali, Indonesia</h4>
                                 <p>Beach Paradise & Temples</p>
                             </div>
                         </div>
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop" alt="Tokyo">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop"
+                                alt="Tokyo">
                             <div class="gallery-overlay">
                                 <h4>Tokyo, Japan</h4>
                                 <p>Modern City & Traditional Culture</p>
                             </div>
                         </div>
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=400&h=300&fit=crop" alt="Rome">
+                            <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=400&h=300&fit=crop"
+                                alt="Rome">
                             <div class="gallery-overlay">
                                 <h4>Rome, Italy</h4>
                                 <p>Colosseum & Vatican City</p>
                             </div>
                         </div>
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1501594907352-2223a6c8f7b5?w=400&h=300&fit=crop" alt="New York">
+                            <img src="https://images.unsplash.com/photo-1501594907352-2223a6c8f7b5?w=400&h=300&fit=crop"
+                                alt="New York">
                             <div class="gallery-overlay">
                                 <h4>New York, USA</h4>
                                 <p>Times Square & Central Park</p>
                             </div>
                         </div>
                         <div class="gallery-item">
-                            <img src="https://images.unsplash.com/photo-1543414658-310c54c4c206?w=400&h=300&fit=crop" alt="Singapore">
+                            <img src="https://images.unsplash.com/photo-1543414658-310c54c4c206?w=400&h=300&fit=crop"
+                                alt="Singapore">
                             <div class="gallery-overlay">
                                 <h4>Singapore</h4>
                                 <p>Marina Bay & Gardens by the Bay</p>
@@ -547,7 +592,7 @@
                 <button class="sub-tab-btn" onclick="showSubTab('groceries-contact', this)">Contact</button>
                 <button class="sub-tab-btn" onclick="showSubTab('groceries-products', this)">Products</button>
             </div>
-            
+
             <div class="groceries-content">
                 <div id="groceries-info" class="sub-tab-content active">
                     <div class="info-grid">
@@ -556,29 +601,33 @@
                                 <i class="fas fa-leaf"></i>
                             </div>
                             <h3>Fresh Produce</h3>
-                            <p>Every day with the freshest fruits and vegetables directly from local farmers. Quality guaranteed with no preservatives.</p>
+                            <p>Every day with the freshest fruits and vegetables directly from local farmers. Quality
+                                guaranteed with no preservatives.</p>
                         </div>
                         <div class="info-card">
                             <div class="card-icon">
                                 <i class="fas fa-truck"></i>
                             </div>
                             <h3>Fast Delivery</h3>
-                            <p>Get your groceries delivered to your doorstep within hours. Fast, reliable, and convenient service available 24/7.</p>
+                            <p>Get your groceries delivered to your doorstep within hours. Fast, reliable, and
+                                convenient service available 24/7.</p>
                         </div>
                         <div class="info-card">
                             <div class="card-icon">
                                 <i class="fas fa-tag"></i>
                             </div>
                             <h3>Best Prices</h3>
-                            <p>Competitive prices without compromising quality. Save money while eating healthy with our affordable pricing.</p>
+                            <p>Competitive prices without compromising quality. Save money while eating healthy with our
+                                affordable pricing.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="groceries-contact" class="sub-tab-content">
                     <div class="contact-form-wrapper">
                         <div class="contact-image">
-                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&h=500&fit=crop" alt="Fresh Groceries">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&h=500&fit=crop"
+                                alt="Fresh Groceries">
                             <div class="agent-info">
                                 <h4>Organic Fresh Market</h4>
                                 <p>Quality Groceries</p>
@@ -588,7 +637,7 @@
                         <div class="contact-form">
                             <h3>Order Your Groceries</h3>
                             <p class="contact-desc">Sales akan menghubungi anda 1x24jam setelah data kami terima</p>
-                            
+
                             <form id="groceriesForm" onsubmit="handleGroceriesSubmit(event)">
                                 <div class="form-group">
                                     <label for="yourName"><i class="fas fa-user"></i> Your Name :</label>
@@ -599,7 +648,8 @@
                                     <input type="email" id="emailAdd" placeholder="example@email.com" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="groceryInterest"><i class="fas fa-shopping-basket"></i> What are you interested in?</label>
+                                    <label for="groceryInterest"><i class="fas fa-shopping-basket"></i> What are you
+                                        interested in?</label>
                                     <select id="groceryInterest" required>
                                         <option value="">Select option</option>
                                         <option value="fresh">Setiap hari beli sayur buah yang fresh disini</option>
@@ -614,41 +664,47 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="groceries-products" class="sub-tab-content">
                     <div class="products-grid">
                         <div class="product-card">
-                            <img src="https://images.unsplash.com/photo-1560180474-4329cb08faa8?w=300&h=200&fit=crop" alt="Fruits">
+                            <img src="https://images.unsplash.com/photo-1560180474-4329cb08faa8?w=300&h=200&fit=crop"
+                                alt="Fruits">
                             <h4>Fresh Fruits</h4>
                             <p>Apples, Oranges, Bananas & More</p>
                             <span class="price">From Rp 15.000</span>
                         </div>
                         <div class="product-card">
-                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9fef83c5?w=300&h=200&fit=crop" alt="Vegetables">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9fef83c5?w=300&h=200&fit=crop"
+                                alt="Vegetables">
                             <h4>Organic Vegetables</h4>
                             <p>Carrots, Spinach, Tomatoes & More</p>
                             <span class="price">From Rp 10.000</span>
                         </div>
                         <div class="product-card">
-                            <img src="https://images.unsplash.com/photo-1607082348581-b62780c048dc?w=300&h=200&fit=crop" alt="Meat">
+                            <img src="https://images.unsplash.com/photo-1607082348581-b62780c048dc?w=300&h=200&fit=crop"
+                                alt="Meat">
                             <h4>Premium Meat</h4>
                             <p>Chicken, Beef, Fish & Seafood</p>
                             <span class="price">From Rp 35.000</span>
                         </div>
                         <div class="product-card">
-                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop" alt="Dairy">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop"
+                                alt="Dairy">
                             <h4>Dairy Products</h4>
                             <p>Milk, Cheese, Yogurt & Butter</p>
                             <span class="price">From Rp 20.000</span>
                         </div>
                         <div class="product-card">
-                            <img src="https://images.unsplash.com/photo-1551489425-9a367c9e8f7a?w=300&h=200&fit=crop" alt="Bakery">
+                            <img src="https://images.unsplash.com/photo-1551489425-9a367c9e8f7a?w=300&h=200&fit=crop"
+                                alt="Bakery">
                             <h4>Fresh Bakery</h4>
                             <p>Bread, Cakes, Pastries & More</p>
                             <span class="price">From Rp 12.000</span>
                         </div>
                         <div class="product-card">
-                            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=300&h=200&fit=crop" alt="Snacks">
+                            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=300&h=200&fit=crop"
+                                alt="Snacks">
                             <h4>Snacks & Beverages</h4>
                             <p>Chips, Cookies, Drinks & More</p>
                             <span class="price">From Rp 8.000</span>
@@ -666,7 +722,7 @@
                 <div class="contact-info">
                     <h3>Get in Touch</h3>
                     <p>We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
-                    
+
                     <div class="contact-details">
                         <div class="detail-item">
                             <div class="detail-icon">
@@ -697,7 +753,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
                     <form id="contactPageForm" onsubmit="handleContactSubmit(event)">
                         <div class="form-group">
@@ -714,7 +770,8 @@
                         </div>
                         <div class="form-group">
                             <label for="contactMessage">Message</label>
-                            <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                            <textarea id="contactMessage" rows="5" placeholder="Write your message here..."
+                                required></textarea>
                         </div>
                         <button type="submit" class="contact-submit">
                             <i class="fas fa-paper-plane"></i> Send Message
@@ -752,9 +809,8 @@
                         <a href="#">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.instagram.com/salsabilaazzhraa/" target="_blank">
                             <i class="fab fa-instagram"></i>
-                            <a href="https://www.instagram.com/arneyfasya?igsh=M2Zqb2l3dzluems2" target="_blank"></a>
                         </a>
                         <a href="#">
                             <i class="fab fa-twitter"></i>
@@ -770,4 +826,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
